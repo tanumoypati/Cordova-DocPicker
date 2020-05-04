@@ -10,6 +10,12 @@
     "type": "git",
     "url": "https://github.com/iampossible/Cordova-DocPicker"
   },
+  "cordova": {
+    "id": "cordova-documentpicker",
+    "platforms": [
+      "ios"
+    ]
+  },
   "keywords": [
     "cordova",
     "plugin",

@@ -2,6 +2,10 @@
 <plugin id="cordova-documentpicker" version="1.2.2" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>DocumentPicker</name>
 
+    <js-module name="DocumentPicker" src="www/DocumentPicker.js">
+            <clobbers target="DocumentPicker" />
+    </js-module>
+
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
             <feature name="DocumentPicker">
@@ -9,13 +13,9 @@
             </feature>
         </config-file>
 
-        <js-module name="DocumentPicker" src="www/DocumentPicker.js">
-            <clobbers target="DocumentPicker" />
-        </js-module>
-
         <source-file src="src/ios/DocumentPicker.swift" />
 
-        <dependency id="cordova-plugin-add-swift-support"  version="2.0.2"/>
+        <!-- <dependency id="cordova-plugin-add-swift-support"  version="2.0.2"/> -->
     </platform>
 
 </plugin>
